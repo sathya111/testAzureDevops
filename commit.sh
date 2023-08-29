@@ -8,7 +8,7 @@ rm -rf .git
 
 cd ..
 
-GIT_CMD_REPOSITORY="https://$AZUSERNAME:$AZUREPAT@dev.azure.com/$AZORG//Dot-Net-Demo/_git/arm
+GIT_CMD_REPOSITORY="https://dev.azure.com/sathyapinreddy/Dot-Net-Demo/_git/arm"
 
 git clone $GIT_CMD_REPOSITORY
 
