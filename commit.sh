@@ -12,7 +12,7 @@ GIT_CMD_REPOSITORY="https://dev.azure.com/sathyapinreddy/Dot-Net-Demo/_git/arm"
 
 git clone $GIT_CMD_REPOSITORY
 ls -ltr
-cp -r testAzureDevops/* Dot-Net-Demo/
+cp -r testAzureDevops/* arm/
 
 cd Dot-Net-Demo
 
