@@ -41,4 +41,4 @@ git commit -m "sync from git to azure"
 git status
 
 #git push https://sathyapinreddy@dev.azure.com/sathyapinreddy/Dot-Net-Demo/_git/arm
-git push origin https://{$AZUREPAT}@dev.azure.com/{$AZORG}//_git/arm
+git push origin https://$AZUREPAT@dev.azure.com/$AZORG//_git/arm
