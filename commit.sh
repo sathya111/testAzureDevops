@@ -14,7 +14,7 @@ git clone $GIT_CMD_REPOSITORY
 ls -ltr
 cp -r testAzureDevops/* arm/
 
-cd Dot-Net-Demo
+cd arm
 
 git config --global user.email "$AZUSER_EMAIL"
 git config --global user.name "$AZUSERNAME"
