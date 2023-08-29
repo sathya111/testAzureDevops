@@ -15,7 +15,7 @@ ls -ltr
 cp -r testAzureDevops/* arm/
 
 cd arm
-
+ls
 git config --global user.email "$AZUSER_EMAIL"
 git config --global user.name "$AZUSERNAME"
 
