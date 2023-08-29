@@ -12,3 +12,14 @@ GIT_CMD_REPOSITORY="https://dev.azure.com/sathyapinreddy/Dot-Net-Demo/_git/arm"
 
 git clone $GIT_CMD_REPOSITORY
 
+cp -r testAzureDevops/* Dot-Net-Demo/
+
+cd Dot-Net-Demo
+
+git config --global user.email "$AZUSER_EMAIL"
+git config --global user.name "$AZUSERNAME"
+
+git add .
+git commit -m "sync from git to azure"
+
+git push
