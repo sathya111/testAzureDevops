@@ -12,7 +12,14 @@ jobs:
         AZUSERNAME: ${{secrets.AZUSERNAME}}
         AZUSER_EMAIL: ${{secrets.AZUSER_EMAIL}}
         AZORG: ${{secrets.AZORG}}
+
+     # Runs a set of commands using the runners shell
+    - name: Run a multi-line script
       run: |
-         chmod +x ./commit.sh
-         ./commit.sh
-      shell: bash
+          git clone git@ssh.dev.azure.com:v3/sathyapinreddy/Dot-Net-Demo/synctest
+          git remote add github git@github.com:sathya111/ADO-SYNC.git
+          git fetch github
+          git push git@ssh.dev.azure.com:v3/sathyapinreddy/Dot-Net-Demo/synctest github/main:main --force
+
+          
+
